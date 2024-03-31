@@ -1,0 +1,72 @@
+.bg{
+    position: absolute;
+    bottom: 50%;
+    left: 0%;
+    z-index: -1;
+    overflow: hidden;
+}
+.bg-header{
+    background: transparent;
+    backdrop-filter:  blur(7px);
+}
+
+body > div.container.d-flex.justify-content-center.align-items-center > div{
+    border: 2px solid #020C68 !important;
+}
+
+body > div.container.d-flex.justify-content-center.align-items-center > div > div > div.col-12.col-md-6.d-flex.justify-content-center.align-items-md-start.flex-column > div > button.btn.btn-primary.rounded-4.px-3{
+background-color: #020C68;
+border: 1px solid #020C68;
+transition: .4s linear;
+}
+body > div.container.d-flex.justify-content-center.align-items-center > div > div > div.col-12.col-md-6.d-flex.justify-content-center.align-items-md-start.flex-column > div > button.btn.btn-primary.rounded-4.px-3:hover{
+    background-color: #ffff;
+    color: #020C68;
+}
+
+body > div.container.d-flex.justify-content-center.align-items-center > div > div > div.col-12.col-md-6.d-flex.justify-content-center.align-items-md-start.flex-column > div > button.btn.btn-outline-primary.rounded-4.px-3{
+    transition: .4s linear;
+    border: 1px solid #020C68;
+    color: #020C68;
+}
+body > div.container.d-flex.justify-content-center.align-items-center > div > div > div.col-12.col-md-6.d-flex.justify-content-center.align-items-md-start.flex-column > div > button.btn.btn-outline-primary.rounded-4.px-3:hover{
+    border: 1px solid #020C68;
+    background-color: #020C68;
+    color: #fff;
+}
+
+.nav-link:hover{
+    color: #020C68 !important;
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .bg{
+        left: 0;
+        top: 0%;
+        width: 100vw;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 768px) {
+    .bg{
+        left: 0;
+        top: 0%;
+        width: 100vw;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 426px) {
+    .bg{
+        left: 10%;
+        top: 25%;
+        width: 100vw;
+        overflow: hidden;
+        transform: rotate(90deg);
+    }
+    .bg-header{
+        background: transparent;
+        backdrop-filter:  blur(1.5px);
+    }
+    
+}
